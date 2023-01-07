@@ -14,13 +14,13 @@ button,
 a {
 	text-decoration: none;
 	list-style: none;
-	color: black;
 	outline: none;
 	border: none;
 }
 
 body {
-	background-color: #ffffff;
+	position: relative;
+	background-color: #fff;
 }
 section {
 	width: 100%;
@@ -28,7 +28,6 @@ section {
 	padding: 1rem;
 }
 h1 {
-	color: #112233;
 	font-size: 3rem;
 	font-weight: 1000;
 }
@@ -38,10 +37,22 @@ h2 {
 p {
 	padding: 30px;
 }
-.btn {
-	height: 12rem;
-	aspect-ratio: 1;
-	border-radius: 50%;
-	cursor: pointer;
-	border: 1px solid #fff;
+#below {
+	opacity: 0.8;
+}
+
+#front {
+	font-weight: 100;
+	position: absolute;
+	top: 0;
+	left: 0;
+	clip-path: circle(100px at var(--x) var(--y));
+}
+.bg-black {
+	color: #fff;
+	background-color: #000;
+}
+.bg-white {
+	color: #000;
+	background-color: #fff;
 }
