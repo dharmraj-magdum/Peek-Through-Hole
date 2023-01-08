@@ -6,38 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+    <script src="https://kit.fontawesome.com/1826d4486b.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
     <title>Peek Through Hole</title>
 </head>
 
 <body>
-    <section id="below" class="bg-white">
-        <h1>clip-path</h1>
-        <p>The clip-path CSS property creates a clipping region
-            that sets what part of an element should be shown. Parts that are
-            inside the region are shown, while those outside are hidden.</p>
-        <p>The clip-path property allows you to make complex shapes in CSS by clipping an element to a basic shape
-            (circle,
-            ellipse, polygon, or inset), or to an SVG source.
+    <Nav>
+        <ul>
+            <li class="heading"><i class="fa-solid fa-circle"></i>PEEK THROUGH HOLE</li>
+            <li>
+                <Button id="plus" onclick="increseHole()" class="fa-regular fa-square-plus">
 
-            CSS Animations and transitions are possible with two or more clip-path shapes with the same number of
-            points.</p>
-        <h2>Understanding Clip Path in CSS</h2>
-        <p>
+                </Button>
+            </li>
+            <li>
+                <Button id="minus" onclick="decreseHole()" class="fa-regular fa-square-minus">
 
-            When I first learned CSS clip-path back in the days, I took more time than I had expected, and I struggled
-            to
-            memorize
-            it, too. I don’t know the exact reason, but maybe because I didn’t use it that much? Anyway, I will re-learn
-            it
-            with
-            you.
-
-            In this article, I aim to provide you with a clear explanation of how clip-path works in detail when to use
-            it,
-            and how
-            you can use it today in your web development projects. Are you ready? Let’s dive in.
-        </p>
+                </Button>
+            </li>
+        </ul>
+    </Nav>
+    <section id="overlay">
     </section>
     <section id="front" class="bg-black">
         <h1>clip-path</h1>
